@@ -2,18 +2,20 @@
     <thead>
         <tr>
             <th>Id</th>
-            <th>Name</th>
+            <th>Nom</th>
             <th>Email</th>
-            <th>Created At</th>
+            <th>Filière</th>
+            <th>Crée le</th>
             <th class="nosort">&nbsp;</th>
         </tr>
     </thead>
     <tbody>
-        @foreach ($customers as $key => $customer)
+        @foreach ($customer as $key => $customer)
         <tr>
             <td>{{ $key+1 }}</td>
             <td>{{ $customer->name }}</td>
             <td>{{ $customer->email }}</td>
+            <td>{{ $customer->filière }}</td>
             <td>{{ $customer->created_at->format('Y/m/d') }}</td>
             <td>
                 <div class="table-actions">

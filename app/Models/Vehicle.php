@@ -36,6 +36,9 @@ class Vehicle extends Model
         {
             $model->created_by = auth()->id();
             $model->registration_number = rand(12,34353).time();
+            $model->start_subscription = now();
+            $model->end_subscription = now()->addYear();
         });
     }
+    
 }

@@ -2,9 +2,9 @@
     <thead>
         <tr>
             <th>Id</th>
-            <th>Name</th>
-            <th>Created By</th>
-            <th>Created At</th>
+            <th>Nom</th>
+            <th>Crée par</th>
+            <th>Crée le</th>
             <th class="nosort">Operation</th>
             <td>Action</td>
         </tr>

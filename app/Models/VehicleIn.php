@@ -12,9 +12,9 @@ class VehicleIn extends Model
 
     protected $fillable = ['parking_area', 'parking_number', 'vehicle_id','created_by'];
 
-    public function vehicle(): BelongsTo
+    public function vehicle()
     {
-        return $this->belongsTo(Vehicle::class, 'vehicle_id', 'id');
+        return $this->belongsTo(Vehicle::class);
     }
 
     public function user(): BelongsTo

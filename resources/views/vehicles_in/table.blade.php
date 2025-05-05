@@ -3,25 +3,25 @@
         <tr>
             <th>Id</th>
             <th>Reg #</th>
-            <th>Vehicle Name</th>
-            <th>Parking Area</th>
-            <th>Parking Number</th>
-            <th>Created At</th>
-            <th>Created By</th>
-            <th class="nosort">Operation</th>
+            <th>Nom du Véhicule</th>
+            <th>Aire de stationnement</th>
+            <th>Numéro de stationnement</th>
+            <th>Créer le</th>
+            <th>Créer par</th>
+            <th class="nosort">Opération</th>
             <th>Action</th>
         </tr>
     </thead>
     <tbody>
         @foreach ($vehiclesIn as $key => $vehicleIn)
         <tr>
-            <td>{{ $key+1 }}</td>
-            <td>{{ $vehicleIn->vehicle->registration_number }}</td>
-            <td>{{ $vehicleIn->vehicle->name }}</td>
-            <td>{{ $vehicleIn->parking_area }}</td>
-            <td>{{ $vehicleIn->parking_number }}</td>
-            <td>{{ $vehicleIn->created_at->format('Y/m/d H:i A') }}</td>
-            <td>{{ $vehicleIn->user->name }}</td>
+        <td>{{ $key + 1 }}</td>
+    <td>{{ optional($vehicleIn->vehicle)->registration_number }}</td> <!-- Utilisation de la fonction optional() -->
+    <td>{{ optional($vehicleIn->vehicle)->name }}</td>
+    <td>{{ $vehicleIn->parking_area }}</td>
+    <td>{{ $vehicleIn->parking_number }}</td>
+    <td>{{ $vehicleIn->created_at->format('Y/m/d H:i A') }}</td>
+    <td>{{ optional($vehicleIn->user)->name }}</td> <!-- Utilisation de la fonction optional() -->
             <td>
                 <div class="table-actions">
                     <a href="#"><i class="ik ik-eye"></i></a>

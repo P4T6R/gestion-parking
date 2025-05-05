@@ -5,14 +5,14 @@
                 <div class="widget-body">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="state">
-                            <h6>Vechile In Today</h6>
+                            <h6>Vechile aujourd'hui</h6>
                             <h2>1,410</h2>
                         </div>
                         <div class="icon">
                             <i class="ik ik-award"></i>
                         </div>
                     </div>
-                    <small class="text-small mt-10 d-block">6% higher than last month</small>
+                    <small class="text-small mt-10 d-block">6% de plus que le mois dernier</small>
                 </div>
                 <div class="progress progress-sm">
                     <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100" style="width: 62%;"></div>
@@ -24,14 +24,14 @@
                 <div class="widget-body">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="state">
-                            <h6>Likes</h6>
+                            <h6>Aimes</h6>
                             <h2>41,410</h2>
                         </div>
                         <div class="icon">
                             <i class="ik ik-thumbs-up"></i>
                         </div>
                     </div>
-                    <small class="text-small mt-10 d-block">61% higher than last month</small>
+                    <small class="text-small mt-10 d-block">61% de plus que le mois dernier</small>
                 </div>
                 <div class="progress progress-sm">
                     <div class="progress-bar bg-success" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%;"></div>
@@ -43,14 +43,14 @@
                 <div class="widget-body">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="state">
-                            <h6>Events</h6>
+                            <h6>Evènements</h6>
                             <h2>410</h2>
                         </div>
                         <div class="icon">
                             <i class="ik ik-calendar"></i>
                         </div>
                     </div>
-                    <small class="text-small mt-10 d-block">Total Events</small>
+                    <small class="text-small mt-10 d-block">Total des évènements</small>
                 </div>
                 <div class="progress progress-sm">
                     <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="31" aria-valuemin="0" aria-valuemax="100" style="width: 31%;"></div>
@@ -62,14 +62,14 @@
                 <div class="widget-body">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="state">
-                            <h6>Comments</h6>
+                            <h6>Commentaires</h6>
                             <h2>41,410</h2>
                         </div>
                         <div class="icon">
                             <i class="ik ik-message-square"></i>
                         </div>
                     </div>
-                    <small class="text-small mt-10 d-block">Total Comments</small>
+                    <small class="text-small mt-10 d-block">Total des Commentaires</small>
                 </div>
                 <div class="progress progress-sm">
                     <div class="progress-bar bg-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"></div>
@@ -83,12 +83,12 @@
                 <div class="card-body">
                     <div class="row align-items-center">
                         <div class="col-lg-8 col-md-12">
-                            <h3 class="card-title">Visitors By Countries</h3>
+                            <h3 class="card-title">Visiteurs par pays</h3>
                             <div id="visitfromworld" style="width:100%; height:350px"></div>
                         </div>
                         <div class="col-lg-4 col-md-12">
                             <div class="row mb-15">
-                                <div class="col-9">India</div>
+                                <div class="col-9">Inde</div>
                                 <div class="col-3 text-right">28%</div>
                                 <div class="col-12">
                                     <div class="progress progress-sm mt-5">
@@ -97,7 +97,7 @@
                                 </div>
                             </div>
                             <div class="row mb-15">
-                                <div class="col-9"> UK</div>
+                                <div class="col-9"> Ukraine</div>
                                 <div class="col-3 text-right">21%</div>
                                 <div class="col-12">
                                     <div class="progress progress-sm mt-5">
@@ -106,7 +106,7 @@
                                 </div>
                             </div>
                             <div class="row mb-15">
-                                <div class="col-9"> USA</div>
+                                <div class="col-9"> Etats Unis d'Amérique</div>
                                 <div class="col-3 text-right">18%</div>
                                 <div class="col-12">
                                     <div class="progress progress-sm mt-5">
@@ -115,7 +115,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-9">China</div>
+                                <div class="col-9">Chine</div>
                                 <div class="col-3 text-right">12%</div>
                                 <div class="col-12">
                                     <div class="progress progress-sm mt-5">
@@ -130,7 +130,7 @@
         </div>
         <div class="col-md-4">
             <div class="card" style="min-height: 422px;">
-                <div class="card-header"><h3>Donut chart</h3></div>
+                <div class="card-header"><h3>Diagramme en forme de donut</h3></div>
                 <div class="card-body">
                     <div id="c3-donut-chart"></div>
                 </div>
@@ -142,7 +142,7 @@
         <div class="col-md-4">
             <div class="card">
                 <div class="card-header">
-                    <h3>Recent Chat</h3>
+                    <h3>Discussion récentes</h3>
                     <div class="card-header-right">
                         <ul class="list-unstyled card-option">
                             <li><i class="ik ik-chevron-left action-toggle"></i></li>
@@ -171,13 +171,13 @@
                         </li>
                         <li class="odd chat-item">
                             <div class="chat-content">
-                                <div class="box bg-light-inverse">I would love to join the team.</div>
+                                <div class="box bg-light-inverse">Je suis heureux de rejoindre l'équipe.</div>
                                 <br>
                             </div>
                         </li>
                         <li class="odd chat-item">
                             <div class="chat-content">
-                                <div class="box bg-light-inverse">Whats budget of the new project.</div>
+                                <div class="box bg-light-inverse">Quel budget pour le nouveau projet ?</div>
                                 <br>
                             </div>
                             <div class="chat-time">10:59 am</div>
@@ -186,7 +186,7 @@
                             <div class="chat-img"><img src="img/users/3.jpg" alt="user"></div>
                             <div class="chat-content">
                                 <h6 class="font-medium">Angelina Rhodes</h6>
-                                <div class="box bg-light-info">Well we have good budget for the project</div>
+                                <div class="box bg-light-info">Bien, nous avons un budget raisonnable pour le projet</div>
                             </div>
                             <div class="chat-time">11:00 am</div>
                         </li>
@@ -204,16 +204,16 @@
             <div class="card">
                 <div class="card-body">
                     <div class="d-flex">
-                        <h4 class="card-title">Weather Report</h4>
+                        <h4 class="card-title">Rapport météo</h4>
                         <select class="form-control w-25 ml-auto">
-                            <option selected="">Today</option>
-                            <option value="1">Weekly</option>
+                            <option selected="">Aujourd'hui</option>
+                            <option value="1">Semaine</option>
                         </select>
                     </div>
                     <div class="d-flex align-items-center flex-row mt-30">
                         <div class="p-2 f-50 text-info"><i class="wi wi-day-showers"></i> <span>23<sup>°</sup></span></div>
-                        <div class="p-2">
-                        <h3 class="mb-0">Saturday</h3><small>Banglore, India</small></div>
+                    <div class="p-2">
+                        <h3 class="mb-0">Samedi</h3><small>Banglore, Inde</small></div>
                     </div>
                     <table class="table table-borderless">
                         <tbody>
@@ -222,7 +222,7 @@
                                 <td class="font-medium">ESE 17 mph</td>
                             </tr>
                             <tr>
-                                <td>Humidity</td>
+                                <td>Humidité</td>
                                 <td class="font-medium">83%</td>
                             </tr>
                             <tr>
@@ -257,8 +257,8 @@
                         <div class="color-overlay d-flex align-items-center">
                             <div class="day-number">8</div>
                             <div class="date-right">
-                                <div class="day-name">Monday</div>
-                                <div class="month">February 2018</div>
+                                <div class="day-name">Lundi</div>
+                                <div class="month">Février 2018</div>
                             </div>
                         </div>
                     </div>
@@ -267,15 +267,15 @@
                             <div class="bullet bg-pink"></div>
                             <div class="time">11am</div>
                             <div class="desc">
-                                <h3>Attendance</h3>
-                                <h4>Computer Class</h4>
+                                <h3>Présence</h3>
+                                <h4>Classe informatique</h4>
                             </div>
                         </li>
                         <li>
                             <div class="bullet bg-green"></div>
                             <div class="time">12pm</div>
                             <div class="desc">
-                                <h3>Design Team</h3>
+                                <h3>Equipe de design</h3>
                                 <h4>Hangouts</h4>
                             </div>
                         </li>
@@ -283,8 +283,8 @@
                             <div class="bullet bg-orange"></div>
                             <div class="time">2pm</div>
                             <div class="desc">
-                                <h3>Finish</h3>
-                                <h4>Go to Home</h4>
+                                <h3>Finir</h3>
+                                <h4>Retour à la maison</h4>
                             </div>
                         </li>
                     </ul>
@@ -300,8 +300,8 @@
                 <div class="dropdown d-inline-block">
                     <a class="btn-icon checkbox-dropdown dropdown-toggle" href="#" id="moreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
                     <div class="dropdown-menu" aria-labelledby="moreDropdown">
-                        <a class="dropdown-item" id="checkbox_select_all" href="javascript:void(0);">Select All</a>
-                        <a class="dropdown-item" id="checkbox_deselect_all" href="javascript:void(0);">Deselect All</a>
+                        <a class="dropdown-item" id="checkbox_select_all" href="javascript:void(0);">Tout sélectionner</a>
+                        <a class="dropdown-item" id="checkbox_deselect_all" href="javascript:void(0);">Tout désélectionner</a>
                     </div>
                 </div>
                 <div class="card-options d-inline-block">
@@ -312,7 +312,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ik ik-more-horizontal"></i></a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreDropdown">
                             <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">More Action</a>
+                            <a class="dropdown-item" href="#">Plus d'action</a>
                         </div>
                     </div>
                 </div>
@@ -330,7 +330,7 @@
                             <div class="form-group">
                                 <input type="email" class="form-control" placeholder="Email">
                             </div>
-                            <button class="btn btn-theme">Search</button>
+                            <button class="btn btn-theme">Rechercher</button>
                         </div>
                     </form>
                 </div>

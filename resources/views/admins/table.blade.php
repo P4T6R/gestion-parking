@@ -3,9 +3,9 @@
         <tr>
             <th>Id</th>
             <th class="nosort">Avatar</th>
-            <th>Name</th>
+            <th>Nom</th>
             <th>Email</th>
-            <th>Created At</th>
+            <th>Créer le</th>
             <th class="nosort">&nbsp;</th>
         </tr>
     </thead>
@@ -17,6 +17,10 @@
             <td>{{ $user->name }}</td>
             <td>{{ $user->email }}</td>
             <td>{{ $user->created_at->format('Y/m/d') }}</td>
+            <!-- Assurez-vous que les relations sont correctement définies dans vos modèles Eloquent -->
+            <td>{{ optional(optional($user->vehicleOut)->vehicleIn)->vehicle->registration_number ?? 'N/A' }}</td>
+            <td>{{ optional(optional($user->vehicleOut)->vehicleIn)->vehicle->name ?? 'N/A' }}</td>
+            
             <td>
                 <div class="table-actions">
                     <a href="#"><i class="ik ik-eye"></i></a>

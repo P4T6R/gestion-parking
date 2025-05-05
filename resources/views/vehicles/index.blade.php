@@ -8,7 +8,7 @@
             <div class="page-header-title">
                 <i class="ik ik-inbox bg-blue"></i>
                 <div class="d-inline">
-                    <h5>Vehicle List</h5>
+                    <h5>Listes des Véhicules</h5>
                 </div>
             </div>
         </div>
@@ -21,7 +21,7 @@
                     <li class="breadcrumb-item">
                         <a href="#">Tables</a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Data Table</li>
+                    <li class="breadcrumb-item active" aria-current="page">Données des tables</li>
                 </ol>
             </nav>
         </div>

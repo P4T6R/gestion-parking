@@ -23,7 +23,7 @@ class CategoryController extends Controller
     {
         Category::updateOrCreate(['id' => $request->category_id], $request->except('category_id'));
 
-        return redirect()->route('categories.index')->with('success', 'category Created Successfully!!');
+        return redirect()->route('categories.index')->with('succès', 'Catégorie créée avec succès!!');
     }
 
     public function show(Category $category)
@@ -40,6 +40,6 @@ class CategoryController extends Controller
     public function destroy(Category $category)
     {
         $category->delete();
-        return redirect()->route('categories.index')->with('success', 'Category Deleted Successfully!!');
+        return redirect()->route('categories.index')->with('succès', 'Catégorie supprimée avec succès!!');
     }
 }

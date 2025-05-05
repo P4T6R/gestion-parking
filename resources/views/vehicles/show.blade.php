@@ -3,7 +3,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">{{ $vehicle->name }} - {{ $vehicle->plat_number }} Details</h5>
+          <h5 class="modal-title" id="exampleModalLongTitle">{{ $vehicle->name }} - {{ $vehicle->plat_number }} Détails</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -14,26 +14,26 @@
 
                         <div class="row">
                             <div class="col-md-4">
-                        <li class="list-group-item">Duration</li>
+                        <li class="list-group-item">Durée</li>
                     </div>
                     <div class="col-md-8">
-                        <li class="list-group-item text-right"><strong>{{ $vehicle->duration }} Days</strong></li>
+                        <li class="list-group-item text-right"><strong>{{ $vehicle->duration }} Jours</strong></li>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">
-                        <li class="list-group-item">Per Day Charge</li>
+                        <li class="list-group-item">Frais par jour</li>
                     </div>
                     <div class="col-md-8">
-                        <li class="list-group-item text-right"><strong>GMD {{ $vehicle->packing_charge }} </strong></li>
+                        <li class="list-group-item text-right"><strong>FCFA {{ $vehicle->packing_charge }} </strong></li>
                     </div>
                 </div>
                     <div class="row">
                         <div class="col-md-4">
-                            <li class="list-group-item">Total Amount</li>
+                            <li class="list-group-item">Montant total</li>
                         </div>
                         <div class="col-md-8">
-                            <li class="list-group-item text-right"><strong> GMD {{ $vehicle->duration *  $vehicle->packing_charge }}</strong></li>
+                            <li class="list-group-item text-right"><strong> FCFA {{ $vehicle->duration *  $vehicle->packing_charge }}</strong></li>
                         </div>
                         </div>
 
@@ -41,7 +41,7 @@
             </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermé</button>
         </div>
       </div>
     </div>

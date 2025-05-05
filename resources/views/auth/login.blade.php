@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Sign Up | JSS Parking System - Admin Template</title>
+    <title>S'enregistrer au Système de Gestion de Parking</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,8 +37,8 @@
                         <div class="logo-centered">
                             <a href="../index.html"><img src="../src/img/brand.svg" alt=""></a>
                         </div>
-                        <h3>Sign In to JSS Parking System</h3>
-                        <p>Happy to see you again!</p>
+                        <h3>S'enregistrer au Système de Parking</h3>
+                        <p>Heureux de ous revoir!</p>
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
                             <div class="form-group">
@@ -68,23 +68,23 @@
                                 <div class="col text-left">
                                     <label class="custom-control custom-checkbox">
                                             <input class="custom-control-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-                                        <span class="custom-control-label">&nbsp;Remember Me</span>
+                                        <span class="custom-control-label">&nbsp;Se Souvenir de moi</span>
                                     </label>
                                 </div>
                                 <div class="col text-right">
                                     @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
+                                        {{ __('Mot de passe oublié ?') }}
                                     </a>
                                 @endif
                                 </div>
                             </div>
                             <div class="sign-btn text-center">
-                                <button type="submit" class="btn btn-theme">  {{ __('Login') }}</button>
+                                <button type="submit" class="btn btn-theme">  {{ __('connetez-vous') }}</button>
                             </div>
                         </form>
                         <div class="register">
-                            <p>{{ __("Don't have an account?") }} <a href="{{ route('register') }}">{{ __('Create an Account') }}</a></p>
+                            <p>{{ __("Don't have an account?") }} <a href="{{ route('register') }}">{{ __('Créer un compte') }}</a></p>
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
         window.jQuery || document.write(
-            '<script src="{{ asset('backend/src/js/vendor/jquery-3.3.1.min.js') }}"><\/script>')
+            '<script src="{{ asset('backend/src/js/vendor/jquery-3.3.1.min.js') }}"><\/script>'
+        );
     </script>
     <script src="{{ asset('backend/plugins/popper.js/dist/umd/popper.min.js') }}"></script>
     <script src="{{ asset('backend/plugins/bootstrap/dist/js/bootstrap.min.js') }}"></script>

@@ -25,6 +25,8 @@ class CreateVehiclesTable extends Migration
             $table->foreignId('category_id')->nullable()->constrained('categories')->onDelete('cascade')->onUpdate('cascade');
             $table->foreignId('customer_id')->nullable()->constrained('customers')->onDelete('cascade')->onUpdate('cascade');
             $table->foreignId('created_by')->nullable()->constrained('users')->onDelete('cascade')->onUpdate('cascade');
+            $table->timestamp('start_subscription')->nullable();
+            $table->timestamp('end_subscription')->nullable();
             $table->timestamps();
         });
     }

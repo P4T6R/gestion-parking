@@ -28,7 +28,7 @@ class VehicleInController extends Controller
     {
         VehicleIn::updateOrCreate(['id' => $request->vehiclesIn_id], $request->all());
 
-        return redirect()->route('vehiclesIn.index')->with('success', 'Vehicle Entered Successfully!!');
+        return redirect()->route('vehiclesIn.index')->with('succès', 'Engin ajouté avec succès!!');
     }
 
     public function show(VehicleIn $vehiclesIn)
@@ -49,6 +49,6 @@ class VehicleInController extends Controller
     public function destroy(VehicleIn $vehiclesIn)
     {
         $vehiclesIn->delete();
-        return redirect()->route('vehiclesIn.index')->with('success', 'Vehicle In Deleted Successfully!!');
+        return redirect()->route('vehiclesIn.index')->with('succès', 'Engin supprimé avec succès!!');
     }
 }

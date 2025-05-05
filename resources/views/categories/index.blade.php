@@ -6,7 +6,7 @@
             <div class="page-header-title">
                 <i class="ik ik-inbox bg-blue"></i>
                 <div class="d-inline">
-                    <h5>Customers List</h5>
+                    <h5>Listes des catégories</h5>
                 </div>
             </div>
         </div>
@@ -19,7 +19,7 @@
                     <li class="breadcrumb-item">
                         <a href="#">Tables</a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Data Table</li>
+                    <li class="breadcrumb-item active" aria-current="page">Données de la table</li>
                 </ol>
             </nav>
         </div>

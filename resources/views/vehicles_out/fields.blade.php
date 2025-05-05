@@ -3,14 +3,15 @@
     <div class="row">
         <div class="col-md-4">
             <div class="form-group">
-                <label for="exampleInputName1">Select Vehicle</label>
+                <label for="exampleInputName1">Choisir un engin</label>
                 <select name="vehicleIn_id" class="form-control">
-                <option value="">Select</option>
+                    <option value="">Sélectionner</option>
                     @foreach ($vehiclesIn as $vehicleIn)
-                        <option value="{{ $vehicleIn->id }}" @if (isset($vehiclesOut))
-                            {{ $vehiclesOut->vehicle_id == $vehicleIn->vehicle->id ? 'selected' : '' }}
-                    @endif>
-                    {{ $vehicleIn->vehicle->name .' - '. $vehicleIn->vehicle->registration_number }}</option>
+                        <option value="{{ $vehicleIn->id }}" @if (isset($vehiclesOut) && optional($vehiclesOut->vehicle)->id == optional($vehicleIn->vehicle)->id)
+                            selected
+                        @endif>
+                            {{ optional($vehicleIn->vehicle)->name .' - '. optional($vehicleIn->vehicle)->registration_number }}
+                        </option>
                     @endforeach
                 </select>
                 @if (isset($vehiclesOut))
@@ -18,6 +19,7 @@
                 @endif
             </div>
         </div>
+    </div>
         {{-- <div class="col-md-4">
             <label for="exampleInputName1">Select Parking Area</label>
             <select name="parking_area" class="form-control">
@@ -38,6 +40,6 @@
         </div> --}}
     </div>
 
-    <button type="submit" class="btn btn-primary mr-2">Submit</button>
-    <button class="btn btn-light">Cancel</button>
+    <button type="submit" class="btn btn-primary mr-2">Enregistrer</button>
+    <button class="btn btn-light">Annuler</button>
 </form>

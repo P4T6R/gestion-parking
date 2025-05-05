@@ -7,15 +7,22 @@ use App\Models\VehicleOut;
 use App\Http\Requests\StoreVehicleOutRequest;
 use App\Http\Requests\UpdateVehicleOutRequest;
 use App\Models\VehicleIn;
+use Illuminate\Http\Request;
 
 class VehicleOutController extends Controller
 {
 
     public function index()
     {
+
+        // $vin = VehicleOut::all();
+        // foreach ($vin as $v) {
+        //     dump($v->vehicleIn());
+        // }
+        // die;
         return view(
             'vehicles_out.index',
-            ['vehiclesOut' => VehicleOut::with(['vehicleIn.vehicle:id,name,registration_number', 'user:id,name'])->get()]
+            ['vehiclesOut' => VehicleOut::all()]
         );
     }
 
@@ -30,7 +37,7 @@ class VehicleOutController extends Controller
     {
         VehicleOut::updateOrCreate(['id' => $request->vehiclesOut_id], $request->all());
         VehicleIn::where('id', $request->vehicleIn_id)->update(['status' => 1]);
-        return redirect()->route('vehiclesOut.index')->with('success', 'Vehicle Out Successfully!!');
+        return redirect()->route('vehiclesOut.index')->with('succès', 'Engin sortit avec succès!!');
     }
 
     public function show(VehicleOut $vehiclesOut)
@@ -38,9 +45,14 @@ class VehicleOutController extends Controller
         return view('vehicles_out.show', compact('VehicleOut'), ['vehicles' => Vehicle::get(['id', 'name', 'registration_number'])]);
     }
 
-    public function edit(VehicleOut $vehiclesOut)
+    public function edit($id)
     {
-        return view('vehicles_out.edit', compact('vehiclesOut'), ['vehicles' => Vehicle::get(['id', 'name', 'registration_number'])]);
+        $vehiclesOut = VehicleOut::find($id);
+        $vehiclesIn = VehicleIn::all(); // Assurez-vous que cette ligne récupère bien les données nécessaires
+
+        dd($vehiclesIn);  // Ajoutez cette ligne pour déboguer
+
+        return view('vehicles_out.fields', compact('vehiclesOut', 'vehiclesIn'));
     }
 
     public function update(UpdateVehicleOutRequest $request, VehicleOut $vehiclesOut)
@@ -51,6 +63,6 @@ class VehicleOutController extends Controller
     public function destroy(VehicleOut $vehiclesOut)
     {
         $vehiclesOut->delete();
-        return redirect()->route('vehiclesOut.index')->with('success', 'Vehicle Out Deleted Successfully!!');
+        return redirect()->route('vehiclesOut.index')->with('succès', 'Engin supprimé de la liste avec succès!!');
     }
 }

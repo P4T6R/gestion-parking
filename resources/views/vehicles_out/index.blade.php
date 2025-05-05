@@ -6,12 +6,12 @@
             <div class="page-header-title">
                 <i class="ik ik-inbox bg-blue"></i>
                 <div class="d-inline">
-                    <h5>Vehicle Out List</h5>
+                    <h5>Listes des Véhicules sortants</h5>
                 </div>
             </div>
         </div>
         <div class="col-lg-2">
-            <a class="btn btn-theme" href="{{ route('vehiclesOut.create') }}"> Add New Vehicle Out</a>
+            <a class="btn btn-theme" href="{{ route('vehiclesOut.create') }}"> Ajouter un nouveau Véhicule sortant</a>
         </div>
     </div>
 </div>

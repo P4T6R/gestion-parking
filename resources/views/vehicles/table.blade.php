@@ -1,14 +1,18 @@
+<!-- resources/views/vehicles/table.blade.php -->
+
 <table id="data_table" class="table">
     <thead>
         <tr>
             <th>Id</th>
             <th>Reg #</th>
-            <th>Category</th>
-            <th>Customer</th>
-            <th>Vehicle Name</th>
-            <th>Plat Number</th>
-            <th>Status</th>
-            <th>Created At</th>
+            <th>Categorie</th>
+            <th>Etudiant</th>
+            <th>Nom de l'engin</th>
+            <th>Numéro d'immatriculation</th>
+            <th>Début Abonnement</th>
+            <th>Fin Abonnement</th>
+            <!--<th>Statut</th>-->
+            <th>Crée le</th>
             <th class="nosort">Operation</th>
             <th>Action</th>
         </tr>
@@ -18,12 +22,14 @@
         <tr>
             <td>{{ $key+1 }}</td>
             <td>{{ $vehicle->registration_number }}</td>
-            <td>{{ $vehicle->category->name }}</td>
-            <td>{{ $vehicle->customer->name }}</td>
+            <td>{{ $vehicle->category ? $vehicle->category->name : 'N/A' }}</td>
+            <td>{{ $vehicle->customer ? $vehicle->customer->name : 'N/A' }}</td>    
             <td>{{ $vehicle->name }}</td>
             <td>{{ $vehicle->plat_number }}</td>
-            <td>{{ $vehicle->status == 1 ? "Active" : "InActive" }}</td>
-            <td>{{ $vehicle->created_at->format('Y/m/d') }}</td>
+            <td>{{ $vehicle->start_subscription ? \Carbon\Carbon::parse($vehicle->start_subscription)->format('d/m/Y') : 'N/A' }}</td>
+            <td>{{ $vehicle->end_subscription ? \Carbon\Carbon::parse($vehicle->end_subscription)->format('d/m/Y') : 'N/A' }}</td>
+            <!--<td>{{ $vehicle->status == 1 ? "Active" : "InActive" }}</td>-->
+            <td>{{ $vehicle->created_at->format('d/m/Y') }}</td>
             <td>
                 <div class="btn-group table-actions">
                     <a href="#" data-toggle="modal" data-target="#show{{ $key }}"><i class="ik ik-eye"></i></a>

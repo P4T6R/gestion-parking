@@ -32,7 +32,7 @@
 <div class="row">
     <div class="col-md-12">
         <div class="card">
-            <div class="card-header"><h3>Adminstrators List</h3></div>
+            <div class="card-header"><h3>Listes des administrateurs</h3></div>
             <div class="card-body">
                 @include('admins.table')
 

@@ -3,12 +3,12 @@
         <tr>
             <th>Id</th>
             <th>Reg #</th>
-            <th>Vehicle Name</th>
-            <th>Parking Area</th>
-            <th>Parking Number</th>
-            <th>Created At</th>
-            <th>Created By</th>
-            <th class="nosort">Statis</th>
+            <th>Nom du Véhicule</th>
+            <th>Aire de stationnement</th>
+            <th>Numéro de stationnement</th>
+            <th>Créer le</th>
+            <th>Créer par</th>
+            <th class="nosort">Statut</th>
             {{-- <th>Operations</th> --}}
         </tr>
     </thead>
@@ -22,7 +22,7 @@
             <td>{{ $vehicleIn->parking_number }}</td>
             <td>{{ $vehicleIn->created_at->format('Y/m/d H:i A') }}</td>
             <td>{{ $vehicleIn->user->name }}</td>
-            <td><label for="" class="badge badge-danger">Out Vehicle</label></td>
+            <td><label for="" class="badge badge-danger">Véhicule sortant</label></td>
             {{-- <td>
                 <div class="btn-group table-actions">
                     <a href="#"><i class="ik ik-eye"></i></a>
